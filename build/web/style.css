@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    padding: 25px;
+}
+
+.container .form{
+    margin: 20px 0;
+}
+
+.form .input-box{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form .input-box input{
+    position: relative;
+    height: 30px;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 8px;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.form .box{
+    margin-top: 20px;
+}
+
+.form :where(.option, .check){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.form .check{
+    column-gap: 5px;
+}
+
+.form :where(.check input, .check label){
+    cursor: pointer;
+}
+
+.form .input-box2{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.button{
+    margin-top: 20px;
+}
+
+.button button{
+    width: 10%;
+    height: 30px;
+    border-radius: 7px;
+    cursor: pointer;
+}

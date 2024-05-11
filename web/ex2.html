@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <fieldset style="padding: 0 13px; border-radius: 8px;">
+            <form action="menu" method="post" class="form">
+                <div class="input-box">
+                    <label for="n">Họ và tên:<span style="color: red"> *</span></label>
+                    <input type="text" name="name" id="n">
+                </div>
+                <div class="input-box">
+                    <label for="d">Địa chỉ:<span style="color: red"> *</span></label>
+                    <input type="text" name="address" id="d">
+                </div>
+                <div class="input-box2">
+                    <label style="margin-right: 17px;">Lựa chọn:</label>
+
+                    <input type="checkbox" name="fooddrink" id="f1" value="Ăn gà rán">
+                    <label for="f1" style="margin-right: 17px;">Ăn gà rán</label>
+
+                    <input type="checkbox" name="fooddrink" id="f2" value="Uống nước mía">
+                    <label for="f2" style="margin-right: 17px;">Uống nước mía</label>
+
+                    <input type="checkbox" name="fooddrink" id="f3" value="Ăn hoa quả">
+                    <label for="f3" style="margin-right: 17px;">Ăn hoa quả</label>
+
+                    <input type="checkbox" name="fooddrink" id="f4" value="Ăn dưa hấu">
+                    <label for="f4" style="margin-right: 17px;">Ăn dưa hấu</label>
+                </div>
+                <div class="input-box">
+                    <label>Nghề nghiệp:</label>
+                    <select name="job">
+                        <option value="Sinh Viên">Sinh Viên</option>
+                        <option value="Giáo Viên">Giáo Viên</option>
+                    </select>
+                </div>
+    
+                <div class="box">
+                    <label>Xác nhận:</label>
+                    <div class="option">
+                        <div class="check">
+                            <input type="radio" id="check-yes" name="check" value="yes">
+                            <label for="check-yes">Yes</label>
+                        </div>
+                        <div class="check">
+                            <input type="radio" id="check-no" name="check" value="no">
+                            <label for="check-no">No</label>
+                        </div>
+                    </div>             
+                </div>
+
+                <div class="button">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </fieldset>
+    </section>
+</body>
+</html>
